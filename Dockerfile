@@ -32,8 +32,8 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 COPY nod32mirror /etc/nginx/sites-available/default
 
 # Установка и настройка cron
-COPY crontab /etc/cron.d/hello-cron
-RUN chmod +x /etc/cron.d/hello-cron
+COPY crontab /etc/cron.d/nod32mirror
+RUN chmod +x /etc/cron.d/nod32mirror
 
 # Очистка 
 RUN rm -Rf /nod32-update-mirror/
