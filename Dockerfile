@@ -9,7 +9,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Устанавливаем локаль
 RUN locale-gen ru_RU.UTF-8 && dpkg-reconfigure locales
 
-# Устанавливаем времят
+# Устанавливаем время
 RUN echo Asia/Yekaterinburg >/etc/timezone && dpkg-reconfigure -f noninteractive tzdata 
 
 # Добавляем необходимые репозитарии и устанавливаем пакеты
