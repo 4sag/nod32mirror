@@ -1,4 +1,4 @@
-# Version: 0.0.2
+# Version: 0.0.3
 
 # Используем за основу контейнера Ubuntu 14.04 LTS
 FROM ubuntu:14.04
