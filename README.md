@@ -1,3 +1,5 @@
+#nod32mirror
+
 Thanks for the script https://github.com/tarampampam/nod32-update-mirror
 Version 1.0.1.8 (Jul 13, 2016)
 
