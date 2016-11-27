@@ -14,13 +14,15 @@ RUN echo Asia/Yekaterinburg >/etc/timezone && dpkg-reconfigure -f noninteractive
 
 # Добавляем необходимые репозитарии и устанавливаем пакеты
 RUN apt-get update
-RUN apt-get install -y nano mc wget curl git unrar-free cron supervisor nginx
+RUN apt-get install -y wget curl git unrar-free cron supervisor
 RUN apt-get clean
 
 # Установка скрипта nod32mirror
 RUN git clone https://github.com/tarampampam/nod32-update-mirror.git
 RUN mkdir -p /home/scripts
+RUN mkdir -p /home/nod32mirror
 RUN mv ./nod32-update-mirror/nod32-mirror /home/scripts
+RUN mv ./nod32-update-mirror/webroot /home/nod32mirror
 COPY settings.conf /home/scripts/nod32-mirror/conf.d/default.conf
 COPY bootstrap.sh /home/scripts/nod32-mirror/include/bootstrap.sh
 RUN find /home/scripts -type f -name '*.sh' -exec chmod +x {} \;
