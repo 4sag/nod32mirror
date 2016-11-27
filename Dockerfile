@@ -14,7 +14,7 @@ RUN echo Asia/Yekaterinburg >/etc/timezone && dpkg-reconfigure -f noninteractive
 
 # Добавляем необходимые репозитарии и устанавливаем пакеты
 RUN apt-get update
-RUN apt-get install -y wget curl git unrar-free cron supervisor
+RUN apt-get install -y wget curl git unrar-free cron
 RUN apt-get clean
 
 # Установка скрипта nod32mirror
