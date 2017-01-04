@@ -1,3 +1,5 @@
+[![](https://images.microbadger.com/badges/image/4sag/nod32mirror.svg)](https://microbadger.com/images/4sag/nod32mirror "Get your own image badge on microbadger.com")
+
 #nod32mirror
 
 Thanks for the script https://github.com/tarampampam/nod32-update-mirror
